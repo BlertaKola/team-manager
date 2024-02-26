@@ -1,0 +1,14 @@
+.playing {
+    background-color: green;
+    color: white;
+}
+
+.not-playing {
+    background-color: red;
+    color: white;
+}
+
+.undecided {
+    background-color: yellow;
+    color: black;
+}
