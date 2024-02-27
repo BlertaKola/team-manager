@@ -1,7 +1,17 @@
 const mongoose = require('mongoose');
 const PlayerSchema = new mongoose.Schema({
-    name: { type: String },
-    position: { type: String },
+    name: { type: String ,
+        required: [
+            true,
+            "Players name is required!"
+        ]
+    },
+    position: { type: String ,
+        required: [
+            true,
+            "Players position is required!"
+        ]
+    },
     game1: { 
         type: String,
         default: "undecided"

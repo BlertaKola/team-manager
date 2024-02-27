@@ -15,11 +15,11 @@ function App() {
       <Nav></Nav>
         <Routes>
           <Route path="/players/list" element={
-            <Players
+            <Players 
               />
           } />
           <Route path="/players/addplayer" element={
-            <Player
+            <Player 
               />
           } />
           <Route path="/status/game/:id" element={<PlayerStatus/>

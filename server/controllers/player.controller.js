@@ -3,7 +3,7 @@ const Player = require('../models/player.model');
 module.exports.createPlayer = (request, response) => {
     Player.create(request.body)
         .then(res => response.json(res))
-        .catch(err => response.json(err))
+        .catch(err => response.status(400).json(err))
 }
 
 module.exports.getAllPlayers = (request, response) => {
@@ -55,4 +55,4 @@ module.exports.updatePlayer = (request, response) => {
             }
         })
         .catch(err => response.status(404).json({ error: 'Player not found.' }));
-};
+};  

@@ -12,3 +12,12 @@
     background-color: yellow;
     color: black;
 }
+.red-button{
+    background-color: red;
+    color: white;
+}
+
+.btn-add{
+    background-color: green;
+    color: white;
+}

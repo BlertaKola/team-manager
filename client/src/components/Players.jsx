@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import axios from 'axios'
+import './Buttons.css'
+
 import ManagePlayers from "./ManagePlayers"
 const Players = (props) => {
     const [players, setPlayers] = useState([])
@@ -44,6 +46,7 @@ const Players = (props) => {
                 <td>{player.position}</td>
                 <td>
                   <button
+                    className="red-button"
                     onClick={() => deletePlayer(player._id)}
                   >
                     DELETE
